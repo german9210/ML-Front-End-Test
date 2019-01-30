@@ -1,0 +1,25 @@
+{
+  "name": "api-test-practico-ml",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.5.1",
+    "express": "^4.7.1",
+    "method-override": "^2.1.2",
+    "mongoose": "~3.6.11",
+    "node-fetch": "^2.3.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
+  },
+  "author": "gcondori",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.3"
+  }
+}
