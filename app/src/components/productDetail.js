@@ -4,7 +4,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { getProductById } from '../actions/actions';
 import ReactLoading from 'react-loading';
 
-
 export default class ProductDetail extends Component {
 
   constructor(props) {
@@ -26,7 +25,7 @@ export default class ProductDetail extends Component {
   getProduct = async (id) => {
     let result = await getProductById(id);
     if (result != null) {
-      if (result === "Failed to fetch")
+      if (result === "Failed");
         await this.setState({ error: true });
 
       await this.setState({ data: result });

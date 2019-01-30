@@ -36,7 +36,7 @@ export default class ProductList extends Component {
   }
   getCategories = (cats) => {
     let value = '';
-    if(cats !== undefined || cats !== null) {
+    if(cats != undefined || cats != null) {
     cats.forEach(function (element, i) {
       if (cats.length === i + 1)
         value += element;
@@ -50,9 +50,8 @@ export default class ProductList extends Component {
   getProducts = async (q) => {
     let result = await getProductsByQuery(q);
     if (result != null) {
-      if (result === "Failed to fetch")
-        await this.setState({ error: true });
-
+      if (result === "Failed")
+        await this.setState({ error: true });       
       await this.setState({ data: result });
       await this.setState({ loaded: true });
     }

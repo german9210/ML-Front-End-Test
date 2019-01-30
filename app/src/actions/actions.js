@@ -1,4 +1,3 @@
-
 export const getProductsByQuery = async (query) => {
   let url = 'http://localhost:8080/api/items?q=';
   let data = '';
@@ -6,9 +5,10 @@ export const getProductsByQuery = async (query) => {
     .then(res => res.json())
     .then((result) => {
       data = result;
+      
     })
     .catch((error) => {
-      data = error.message;
+      data = "Failed";
     });
 
   return data;
@@ -24,7 +24,7 @@ export const getProductById = async (id) => {
       data = result;
     })
     .catch((error) => {
-      data = error.message;
+      data = "Failed";
     });
 
   return data;
