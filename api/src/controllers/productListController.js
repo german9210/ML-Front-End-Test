@@ -42,8 +42,8 @@ exports.getProductsByQuery = async function (query) {
 
     var ListObj = {
       author: {
-        name: '',
-        lastname: ''
+        name: 'Germán',
+        lastname: 'Condori Morales'
       },
       categories: categories,
       items: list,

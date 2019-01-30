@@ -20,8 +20,8 @@ exports.getProductById = async function (Id) {
 
      var obj = {
       author: {
-        name: "",
-        lastname: ""
+        name: "Germán",
+        lastname: "Condori Morales"
         },
       item: {
         id: dataProd.id,
